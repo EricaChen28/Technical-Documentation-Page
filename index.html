@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        background-color: none;
+      }
+
+      body {
+        font-family: Arial;
+        padding: 10px;
+        background: white;
+        line-height: 1.6;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 10px;
+        text-align: center;
+        background: #FAF0E6;
+        font-family:Arial;
+      }
+
+      .header h1 {
+        font-size: 40px;
+      }
+
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: white;
+      }
+
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 26px;
+        text-decoration: none;
+        font-weight: bold;
+
+      }
+
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #FAF0E6;
+        color: black;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 25%;
+
+      }
+
+      /* Right column */
+      .rightcolumn {
+        float: left;
+        width: 75%;
+        background-color: #FAF0E6;
+        padding-top: none;
+        padding-right: 2px;
+        padding-left: 2px;
+      }
+
+      /* image */
+      .img {
+        width: 65%;
+        padding: none;
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+   <div class="row">
+     <div class="leftcolumn">
+       <div class="card">
+         <nav class="topnav" id="navbar">
+           <header>Go to</header>
+
+           <a href="#Diamond_Cut" class="nav-link">
+             Diamond Cut
+           </a>
+           <a href="#Carat_Weight" class="nav-link">
+             Carat Weight
+           </a>
+           <a href="#Diamond_Color_Grade" class="nav-link">
+             Diamond Color Grade
+           </a>
+           <a href="#Diamond_Clarity" class="nav-link">
+             Diamond Clarity
+           </a>
+           <a href="#More_Information" class="nav-link">
+             More Information
+           </a>
+         </nav>
+       </div>
+     </div>
+     <div class="rightcolumn">
+
+       <div class="header">
+         <h1>The 4Cs of Diamond Quality</h1>
+       </div>
+       <main id="main-doc">
+
+         <div class="card">
+           <section class="main-section" id="Diamond_Cut">
+             <header><b>Diamond Cut</b></header>
+             <code>A Diamond’s Cut Unleashes Its Light.</code>
+             <ol>
+               <li>We often think of a diamond’s cut as shape (round, heart, oval, marquise, pear), but a diamond’s cut grade is really about how well a diamond’s facets interact with light.</li>
+               <li>Precise artistry and workmanship are required to fashion a stone so its proportions, symmetry and polish deliver the magnificent return of light only possible in a diamond.</li>
+               <li>Brightness: Internal and external white light reflected from a diamond.</li>
+               <li>Fire: The scattering of white light into all the colors of the rainbow.</li>
+               <li>Scintillation: The amount of sparkle a diamond produces, and the pattern of light and dark areas caused by reflections within the diamond.</li>
+             </ol>
+             <p>A diamond’s cut is crucial to the stone’s final beauty and value. And of all the diamond 4Cs, it is the most complex and technically difficult to analyze.</p>
+             <p>To determine the cut grade of the standard round brilliant diamond – the shape that dominates the majority of diamond jewelry – GIA calculates the proportions of those facets that influence the diamond’s face-up appearance.</p>
+             <img class="img" src="https://www.thediamondcenter.com/wp-content/uploads/2018/07/Hero_Cut_700x394.jpg" alt="Diamond cut proportions">
+           </section>
+         </div>
+         <div class="card">
+           <section class="main-section" id="Carat_Weight">
+             <header><b>Carat Weight</b></header>
+             <code>Diamond Carat Weight Measures a Diamond’s Apparent Size.</code>
+             <p>Diamond carat weight is the measurement of how much a diamond weighs. A metric “carat” is defined as 200 milligrams.</p>
+             <p>Each carat can be subdivided into 100 ‘points.’ This allows very precise measurements to the hundredth decimal place. A jeweler may describe the weight of a diamond below one carat by its ‘points’ alone.</p>
+             <p>For instance, the jeweler may refer to a diamond that weighs 0.25 carats as a ‘twenty-five pointer.’ </p>
+             <p>All else being equal, diamond price increases with diamond carat weight because larger diamonds are more rare and more desirable. But two diamonds of equal carat weight can have very different values (and prices) depending on three other factors of the diamond 4Cs: Clarity, Color, and Cut.</p>
+           </section>
+         </div>
+         <div class="card">
+           <section class="main-section"  id="Diamond_Color_Grade">
+             <header><b>Diamond Color Grade</b></header>
+             <code>Diamond Color Actually Means Lack of Color.</code>
+             <p>The diamond color evaluation of most gem-quality diamonds is based on the absence of color.</p>
+             <p>A chemically pure and structurally perfect diamond has no hue, like a drop of pure water, and consequently, a higher value. GIA’s D-to-Z diamond color-grading system measures the degree of colorlessness by comparing a stone under controlled lighting and precise viewing conditions to masterstones of established color value.</p>
+             <p>Many of these diamond color distinctions are so subtle that they are invisible to the untrained eye; however, these distinctions make a very big difference in diamond quality and price.</p>
+             <img class="img" src="https://www.thediamondcenter.com/wp-content/uploads/2018/07/color-e1531851729622.jpg" alt="Diamond Color">
+           </section>
+         </div>
+         <div class="card">
+           <section class="main-section"  id="Diamond_Clarity">
+             <header><b>Diamond Clarity</b></header>
+             <code>Diamond Clarity Refers to the Absence of Inclusions and Blemishes.</code>
+             <p>Natural diamonds are the result of carbon exposed to tremendous heat and pressure deep in the earth. This process can result in a variety of internal characteristics called ‘inclusions’ and external characteristics called ‘blemishes.’</p>
+             <p>Evaluating diamond clarity involves determining the number, size, relief, nature, and position of these characteristics, as well as how these affect the overall appearance of the stone. While no diamond is perfectly pure, the closer it comes, the higher its value.</p>
+             <p>The GIA Diamond Clarity Scale has 6 categories, some of which are divided, for a total of 11 specific grades.</p>
+             <ol>
+               <li><b>Flawless (FL)</b> No inclusions and no blemishes visible under 10x magnification.</li>
+               <li><b>Internally Flawless (IF)</b> No inclusions visible under 10x magnification.</li>
+               <li><b>Very, Very Slightly Included (VVS1 and VVS2)</b> Inclusions so slight they are difficult for a skilled grader to see under 10x magnification.</li>
+               <li><b>Very Slightly Included (VS1 and VS2)</b> Inclusions are observed with effort under 10x magnification, but can be characterized as minor.</li>
+               <li><b>Slightly Included (SI1 and SI2)</b> Inclusions are noticeable under 10x magnification.</li>
+               <li><b>Included (I1, I2, and I3)</b> Inclusions are obvious under 10x magnification which may affect transparency and brilliance.</li>
+             </ol>
+             <img class="img" src="https://www.thediamondcenter.com/wp-content/uploads/2018/07/Hero_Clarity_990x500-e1531851907120.jpg" alt="Diamond Clarity">
+             </section>
+         </div>
+         <div class="card">
+           <section class="main-section" id="More_Information">
+             <header><b>More Information</b></header>
+             <code>All resources are from <b>The Diamond Center</b>.</code>
+             <p><a href="https://www.thediamondcenter.com/about-us/the-4-cs/#:~:text=could%20be%20judged.-,GIA%20created%20the%20first%2C%20and%20now%20globally%20accepted%20standard%20for,diamond%2C%20anywhere%20in%20the%20world/">Visit The Diamond Center.com!</a></p>
+             <p>Please go to thediamondcenter.com for more information.</p>
+             <p>All the resources above are captured from online resources,The Diamond Center.</p>
+           </section>
+         </div>
+       </main>
+     </div>
+   </div>
+
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+ </body>
+</html>
